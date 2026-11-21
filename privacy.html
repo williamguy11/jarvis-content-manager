@@ -12,7 +12,7 @@
 <body>
 <p><a href="index.html">JARVIS Content Manager</a> · <a href="terms.html">Terms of Service</a></p>
 <h1>Privacy Policy</h1>
-<p>Effective 19 November 2026.</p>
+<p>Effective 19 November 2026; YouTube section added 20 November 2026.</p>
 
 <h2>Who this covers</h2>
 <p>JARVIS Content Manager ("JARVIS") is a personal desktop assistant used only by its owner on their own Windows computer. It has no other users.</p>
@@ -25,17 +25,32 @@
   <li>Upload and processing status for videos the owner chooses to send (scope <code>video.upload</code>).</li>
 </ul>
 
+<h2>What JARVIS receives from YouTube (Google)</h2>
+<ul>
+  <li>Access and refresh tokens, issued by Google when the owner signs in to their own YouTube channel and approves access.</li>
+  <li>The channel's ID and title (scope <code>youtube.readonly</code>), used to confirm which of the owner's channels is connected and to show its own
+      videos and statistics.</li>
+  <li>The channel's own YouTube Analytics reports, such as views, watch time and retention (scopes <code>yt-analytics.readonly</code> and
+      <code>yt-analytics-monetary.readonly</code>), shown only to the owner in JARVIS.</li>
+  <li>Upload status for videos the owner approves for their own channel (scope <code>youtube.upload</code>). JARVIS never uploads without the
+      owner's approval of that specific video.</li>
+</ul>
+<p>JARVIS's use and transfer of information received from Google APIs adheres to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use
+requirements.</p>
+
 <h2>Where it is kept</h2>
 <p>Tokens are stored only on the owner's computer, in Windows Credential Manager. They are never written to logs, shown on screen, or sent
-anywhere except back to TikTok's own servers. There is no JARVIS server and no cloud copy.</p>
+anywhere except back to the platform that issued them (TikTok or Google). There is no JARVIS server and no cloud copy.</p>
 
 <h2>Sharing</h2>
-<p>JARVIS does not sell, rent or share any data, and contains no advertising or analytics trackers. Videos are sent only to TikTok, and only
-when the owner chooses to.</p>
+<p>JARVIS does not sell, rent or share any data, and contains no advertising or analytics trackers. Videos are sent only to the owner's own TikTok or YouTube
+account, and only when the owner chooses to.</p>
 
 <h2>Deleting data</h2>
 <p>Removing the TikTok sign-in (<code>tiktok-oauth</code>) in JARVIS under Settings → Credentials deletes the stored tokens. Access can also be removed in the TikTok app
-(Settings and privacy → Security and permissions → Apps).</p>
+(Settings and privacy → Security and permissions → Apps). Removing the YouTube sign-in (<code>youtube-oauth</code>) deletes the stored Google tokens;
+access can also be removed at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
 
 <h2>Changes</h2>
 <p>This policy may be updated; the date above shows the latest version.</p>
